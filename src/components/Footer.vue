@@ -70,6 +70,13 @@ footer {
       }
     }
   }
+  .more-info {
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: var(--n-code-text-color);
+    }
+  }
   .author {
     cursor: pointer;
     transition: all 0.3s;
@@ -84,15 +91,6 @@ footer {
     &:hover {
       color: var(--n-code-text-color);
     }
-  }
-  .more-info {
-    font-size: 13px;
-    margin: 4px 0;
-    cursor: pointer;
-    transition: color 0.3s;
-    span:hover {
-      color: var(--n-code-text-color);
-    }
-  }
+  }  
 }
 </style>
