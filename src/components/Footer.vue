@@ -61,6 +61,14 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .more-info {
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: var(--n-code-text-color);
+    }
+  }
   .copyright {
     margin-bottom: 4px;
     .description {
@@ -68,13 +76,6 @@ footer {
         content: "@ License By";
         margin: 0 6px;
       }
-    }
-  }
-  .more-info {
-    cursor: pointer;
-    transition: all 0.3s;
-    &:hover {
-      color: var(--n-code-text-color);
     }
   }
   .author {
