@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="Copyright">
+    <div class="copyright">
       <n-text class="description" v-html="packageJson.description" />
       <n-text
         class="author"
