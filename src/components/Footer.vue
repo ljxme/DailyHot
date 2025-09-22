@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="License">
+    <div class="Copyright">
       <n-text class="description" v-html="packageJson.description" />
       <n-text
         class="author"
@@ -44,7 +44,7 @@ footer {
     margin-bottom: 4px;
     .description {
       &::after {
-        content: "@ Copyright By";
+        content: "@ License By";
         margin: 0 6px;
       }
     }
