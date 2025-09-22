@@ -84,6 +84,7 @@ footer {
     &:hover {
       color: var(--n-code-text-color);
     }
+  }
   .more-info {
     font-size: 13px;
     margin: 4px 0;
