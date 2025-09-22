@@ -1,3 +1,12 @@
+// 引入字体
+@font-face {
+  font-family: 'LXGWWenKaiLite';
+  src: url('./LXGWWenKaiGBLite-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 // 全局样式
 * {
   margin: 0;
@@ -10,6 +19,7 @@ html,
 body,
 #app {
   height: 100%;
+  font-family: 'LXGWWenKaiLite', sans-serif; // 使用字体
 }
 
 // 动画
