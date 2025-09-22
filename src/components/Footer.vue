@@ -69,7 +69,9 @@ footer {
     .link {
       cursor: pointer;
       transition: color 0.3s;
-      &:hover { color: var(--n-code-text-color); }
+      &:hover { color: var(--n-code-text-color);
+                text-decoration: underline;
+              }
     }
   }
 
