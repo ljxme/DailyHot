@@ -9,6 +9,16 @@
         @click="jumpLink(packageJson.github)"
       />
     </div>
+
+    <!-- 新增的一行 -->
+    <n-text :depth="3" class="more-info">
+      <span @click="jumpLink(links.own)">Own By {{ links.ownName }}</span>
+      |
+      <span @click="jumpLink(links.built)">Built By {{ links.builtName }}</span>
+      |
+      <span @click="jumpMail(links.mail)">Contact Me By Email</span>
+    </n-text>
+
     <n-text
       v-if="icp"
       :depth="3"
@@ -22,12 +32,23 @@
 <script setup>
 import packageJson from "@/../package.json";
 
+const links = {
+  own: 'https://artemisia.icu',
+  ownName: 'Artemisia',
+  built: 'https://github.com/artemisia1107',
+  builtName: 'artemisia1107',
+  mail: 'artemisia666@foxmail.com'   // QQ 邮箱
+}
+
 const icp = ref(import.meta.env.VITE_ICP ? import.meta.env.VITE_ICP : null);
 
 // 链接跳转
 const jumpLink = (url) => {
   window.open(url);
 };
+const jumpMail = (email) => (
+  window.location.href = `mailto:${email}`
+)
 </script>
 
 <style lang="scss" scoped>
@@ -61,6 +82,14 @@ footer {
     cursor: pointer;
     transition: all 0.3s;
     &:hover {
+      color: var(--n-code-text-color);
+    }
+  .more-info {
+    font-size: 13px;
+    margin: 4px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+    span:hover {
       color: var(--n-code-text-color);
     }
   }
