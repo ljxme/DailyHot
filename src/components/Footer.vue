@@ -29,7 +29,7 @@
       :depth="3"
       class="icp"
       v-html="icp"
-      @click="jumpLink('https://icp.gov.moe/?keyword=20250850')"
+      @click="jumpLink('https://beian.miit.gov.cn/')"
     />
   </footer>
 </template>
