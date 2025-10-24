@@ -38,10 +38,10 @@
 import packageJson from '@/../package.json'
 
 const links = {
-  own: 'https://artemisia.icu',
-  ownName: 'Artemisia',
-  built: 'https://github.com/artemisia1107',
-  builtName: 'artemisia1107',
+  own: 'https://blog.ljx.icu',
+  ownName: 'Ljx',
+  built: 'https://github.com/ljxme',
+  builtName: 'ljxme',
   mail: 'artemisia666@foxmail.com'
 }
 
